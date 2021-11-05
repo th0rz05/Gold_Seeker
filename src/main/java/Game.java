@@ -27,9 +27,10 @@ public class Game {
     }
 
     public void draw(){
-        try {screen.clear();
-        screen.setCharacter(10, 10, TextCharacter.fromCharacter('X')[0]);
-        screen.refresh();
+        try {
+            screen.clear();
+            screen.setCharacter(10, 10, TextCharacter.fromCharacter('X')[0]);
+            screen.refresh();
         }
         catch (IOException e){
             e.printStackTrace();
