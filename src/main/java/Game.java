@@ -26,18 +26,18 @@ public class Game {
         }
     }
 
-    public void draw() throws IOException{
-        screen.clear();
+    public void draw(){
+        try {screen.clear();
         screen.setCharacter(10, 10, TextCharacter.fromCharacter('X')[0]);
         screen.refresh();
-    }
-
-    public void run(){
-        try {draw();
         }
         catch (IOException e){
             e.printStackTrace();
         }
+    }
+
+    public void run(){
+        draw();
     }
 
 }
