@@ -181,7 +181,7 @@ public class Arena {
     public boolean verifyMonsterCollisions(){
         for(Monster monster:monsters){
             if(hero.getPosition().equals(monster.getPosition())){
-                System.out.println("END");
+                System.out.println("YOU LOST!");
                 return false;
             }
         }
