@@ -29,7 +29,7 @@ public class Game {
             screen.doResizeIfNecessary();
 
             TextGraphics graphics = screen.newTextGraphics();
-            graphics.setBackgroundColor(TextColor.Factory.fromString("#336699"));
+            graphics.setBackgroundColor(TextColor.Factory.fromString("#3386FF"));
             graphics.fillRectangle(new TerminalPosition(0, 0), new TerminalSize(arena.getWidth(), arena.getHeight()), ' ');
 
         } catch (IOException e) {
